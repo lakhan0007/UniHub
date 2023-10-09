@@ -1,0 +1,218 @@
+/* Base styles for larger screens */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: red; */
+    /* width: 100vw !important; */
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    font-family: 'Albert Sans', sans-serif;
+ 
+}
+
+.nav {
+    background-color: rgb(103, 103, 213);
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    width: auto;
+    padding-bottom: 10px;
+}
+
+.navLogo img {
+    width: 100%;
+    max-width: 142px;
+    height: 55px;
+}
+
+.navsearch input {
+    width: 600px;
+    height: 40px;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #FFF;
+    padding-left: 15px;
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 5px 0px rgba(0, 0, 0, 0.50) inset; */
+}
+
+.navsearch input:focus{
+    border: rgb(224, 115, 42) 2px solid;
+}
+
+.topNav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+
+.navIcons{
+    margin-top: 18px;
+    font-size: 17px;
+    font-weight: 550;
+}
+.login-button{
+    color: white;
+}
+.login-button:hover{
+    color: rgb(240, 98, 22);
+}
+
+/* .navText {
+    display: flex;
+} */
+
+.navText img {
+    width: 70px;
+    height: 25px;
+}
+
+.navsearch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navsearch p {
+    color: #FFF;
+    text-shadow: 0px 4px 4px #000;
+    /* font-family: Work Sans; */
+    font-size: 17px;
+    font-style: normal;
+    line-height: normal;
+    height: 2px;
+    flex-shrink: 0;
+}
+.navIn{
+    padding-left: 0px;
+    position: relative;
+}
+.searchIcon{
+    position: absolute;
+    color: #ff0000;
+    left: 69.5%;
+    /* background-color: aqua; */
+}
+.navButtons1 button {
+    color: #FFF;
+    font-size: 15px !important;
+    background: transparent;
+    border: none;
+}
+.haburgerDiv{
+    color: white;
+    font-size: 18px !important;
+    
+}
+
+.navButtons1{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 0px 20px ;
+    flex-wrap: wrap;
+}
+
+.DropdownBtn{
+    justify-content: space-between;
+}
+
+/* Media query for tablet-sized screens */
+@media (max-width: 1024px) {
+    .navsearch input {
+        
+            width: 170%;
+            max-width: 400px;
+        
+    }
+    .searchIcon{
+        position: absolute;
+        color: #ff0000;
+        left: 65%;
+    }
+    .navIcons img {
+        width: 100%;
+        max-width: 40px;
+        margin-top: 20px;
+    }
+
+    .navButtons button {
+        width: 60px;
+        font-size: 22px;
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  
+    .navLogo img {
+        width: 100px;
+        height: 50px;
+    }
+
+    .navsearch input {
+        width: 168%;
+        max-width: 300px;
+    }
+
+    .topNav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navIcons img {
+        width: 30px;
+        margin-top: 10px;
+    }
+    .searchIcon{
+        position: absolute;
+        color: #ff0000;
+        left: 67%;
+    }
+    .navButtons button {
+        width: 140px;
+        font-size: 20px;
+    }
+    .topNav {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navButtons button {
+        width: 140px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 468px) {
+    .navButtons1{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0px 0px 0px ;
+        flex-wrap: wrap;
+    }
+    .navButtons button {
+        width: 140px;
+        font-size: 15px;
+    }
+    .navsearch input {
+        width: 106%;
+        max-width: 300px;
+    }
+    .cardArea {
+       
+        margin-top: -80px;
+    }
+    .navsearch input {
+        width: 97%;
+        max-width: 300px;
+    }
+    .searchIcon{
+        position: absolute;
+        color: #ff0000;
+        left: 69%;
+    }
+}
